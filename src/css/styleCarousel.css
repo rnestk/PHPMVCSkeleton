@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-09-12, 19:08:05
+    Author     : rnestkZ500
+*/
+
+
+div#containerKar{
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #003333;
+    padding: 0px;
+    background: silver;
+}
+
+div#logo{
+    position: relative;
+    left: -200px;
+    top: 0px;
+    width: 180px;
+    height: 90px;
+}
+
+div#haslo{
+    position: relative;
+    left: 750px;
+    top: -90px;
+    width: 450px;
+    height: 40px;
+}
+
+div#tekst{
+    position: relative;
+    left: 750px;
+    top: 10px;
+    width: 415px;
+    height: 45px;
+}
+
+div#przycisk{
+    position: relative;
+    left: 750px;
+    top: -140px;
+    width: 40px;
+    height: 40px;
+}
+

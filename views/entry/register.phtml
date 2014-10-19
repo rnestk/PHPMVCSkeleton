@@ -1,0 +1,67 @@
+<?php /* @var $form app\lib\FormHelper */ ?>
+
+<div class="container bordered basicBackground">
+
+
+
+    <div style="float: left; margin-right: 40px; margin-left: 40px;">
+        <?php echo $form->startForm(); ?>
+        <div class="row">
+            <?php echo $form->createLabel(array('title' => 'Wpisz login:')) . '</br>'; ?>
+            <?php
+            echo $form->createTextField(
+                    array(
+                        'name' => 'login',
+                        'placeholder' => 'Wpisz login',
+                        'autocomplete' => 'on',
+                        'id' => 'login'
+                    )
+            )
+            ?>
+        </div>
+        <div class="row">
+            <?php echo $form->createLabel(array('title' => 'Wpisz email:')) . '</br>'; ?>
+            <?php echo $form->createEmailField(array('name' => 'email', 'id' => 'email')); ?>
+        </div>
+        <div class="row">
+            <?php echo $form->createLabel(array('title' => 'Wpisz hasło:')) . '</br>'; ?>
+            <?php echo $form->createPasswordField(array('name' => 'password', 'id' => 'password')); ?>
+        </div>
+        <div class="row">
+            <?php echo $form->createLabel(array('title' => 'Potwierdź hasło:')) . '</br>'; ?>
+            <?php echo $form->createPasswordField(array('name' => 'confirm', 'id' => 'confirm_password')) ?>
+        </div>
+        <div class="row">
+            <?php echo $form->createSubmitButton(array('name' => 'send', 'value' => 'Wyślij', 'id' => 'send', 
+                'class' => 'btn-info submitButton')) ?>
+        </div>
+
+        <?php echo $form->endForm(); ?>
+    </div>
+
+    <div style="">
+        <div class="row">
+            <?php if (!empty($errors)): ?>
+
+            <p style="color: #ff0000;"><strong>Błędy w formularzu:</strong></p>
+                <?php $counter = 0; ?>
+                <?php while (list(, $e) = each($errors)): ?>
+                    <p><?php echo ++$counter . ') ' . $e . "</br>" ?></p>
+                <?php endwhile; ?>
+
+            <?php endif; ?>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+

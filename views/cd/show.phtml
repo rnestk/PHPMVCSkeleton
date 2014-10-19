@@ -1,0 +1,52 @@
+<?php
+$css = array("divStyle rnOffset30 rnWidth70", "linkStyle", "activeLink", "np");
+$counter = 0;
+?>
+<div class="container bordered">
+
+    <div class="row">
+
+        <div class="col-md-8 col-md-offset-3">
+            
+        </div>
+
+
+    </div>
+    
+    
+    <div class="row">
+        <div class="">
+            <table class="table-bordered table-striped" style="position: relative; width: 60%; left: 20%;">
+                <thead>
+                    <tr>
+                        <td><p><b>DB Id</b></p></td>
+                        <td><p><b>Wykonawca</b></p></td>
+                        <td><p><b>Tytuł</b></p></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php while ($row = $result->fetch_assoc()): ?>
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['artist']; ?></td>
+                        <td><?php echo $row['title']; ?></td>
+                    </tr>
+                    <?php endwhile; ?>
+                </tbody>
+                <tfoot></tfoot>
+                
+            </table>
+            
+        </div>
+
+    </div>
+
+    <div class="row">
+        <?php
+        $controller = "cd";
+        $action = "show";
+        $db->createPagination($css, 5, $controller, $action);
+        ?>
+    </div>
+
+</div>

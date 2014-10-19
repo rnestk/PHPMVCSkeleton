@@ -1,0 +1,267 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-09-25, 22:08:12
+    Author     : rnestkZ500
+*/
+
+body{
+
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.header{
+
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.content{
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.footer{
+
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.error{
+    background-color: #333333;
+    color: whitesmoke;
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 350px;
+}
+
+.errorImg{
+    float: left;
+}
+
+.errorDetails{
+    padding: 10px;
+}
+
+.container{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.bordered{
+    -moz-box-shadow: 0 0 2px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+}
+
+pre{
+    background: #006666;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+
+.divStyle{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.linkStyle{
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    float: left;
+    border: 1px solid silver;
+    height: 30px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px silver;
+    background: whitesmoke;
+}
+
+.activeLink{
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    float: left;
+    border: 1px outset silver;
+    height: 30px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px silver;
+    background: #cccccc;
+}
+
+.activeLink p{
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.linkStyle p {
+    height: 30px;
+    margin: 5px;
+}
+
+.np{
+    border: 1px outset black;
+    background: linear-gradient(cadetblue, #ccccff);
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.np p {
+    margin: 10px;
+    font-family: Verdana, Tahoma, Arial, Courier, sans-serif;
+    color: black;
+    font-size: 10px;
+}
+
+.notify{
+    text-align: center;
+    position: relative;
+    color: whitesmoke;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    box-shadow: 1px 2px 2px black;
+    z-index: 999;
+    background: #ff0000;
+}
+
+#notification{
+    position: absolute;
+    width: 50%;
+    height: 25%;
+    left: 25%;
+    top: 33%;
+    box-shadow: 2px 2px 2px silver;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    z-index: 899;
+    background: linear-gradient(silver, whitesmoke);
+    display: none;
+}
+
+#end{
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    float: right;
+/*    border: 1px solid grey;*/
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#info{
+    clear: both;
+    color: red;
+    padding-top: 20px;
+}
+
+div#info p{
+    text-align: center;
+}
+
+
+.rnOffset5{
+    left: 5%;
+}
+
+.rnOffset10{
+    left: 10%;
+}
+
+.rnOffset15{
+    left: 15%;
+}
+
+.rnOffset20{
+    left: 20%;
+}
+
+.rnOffset25{
+    left: 25%;
+}
+
+.rnOffset30{
+    left: 30%;
+}
+
+.rnOffset35{
+    left: 35%;
+}
+
+.rnOffset40{
+    left: 40%;
+}
+
+.rnWidth90{
+    width: 90%;
+}
+
+.rnWidth80{
+    width: 80%;
+}
+
+.rnWidth70{
+    width: 70%;
+}
+
+.rnWidth60{
+    width: 60%;
+}
+
+.formError{
+    border: 1px inset red;
+}
+
+.rnPadd5 {
+    padding: 5px;
+}
+
+.rnPadd10 {
+    padding: 10px;
+}
+
+td{
+    padding: 5px;
+}
+
+.basicForm{
+    padding: 5px;
+    margin: 20px;
+}
+
+
+
+.submitButton {
+    margin-top: 10px;
+}
+
+.basicBackground{
+    background: linear-gradient(silver, whitesmoke);
+}
+
+
+
+

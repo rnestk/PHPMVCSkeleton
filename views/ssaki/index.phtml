@@ -1,0 +1,46 @@
+
+<?php $counter = 0; ?>
+<div class="container bordered">
+    
+    <div class="row">
+
+        <div class="col-md-12 col-md-offset-0">
+            <p class="text-info">Niektóre fajne ssaki.</p>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <table class="table-striped rnPadd10">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nazwa</td>
+                    <td>Zdjęcie</td>
+                    <td>Opis</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row = $resArray->fetch_assoc()): ?>
+                    <tr>
+                        <td><?php echo ++$counter; ?></td>
+                        <td><?php echo $row['name']; ?></td>
+                        <td><img class="thumbnail" src="src/img/ssaki/<?php echo $row['img']; ?>" 
+                                 alt="<?php echo $row['img']; ?>" /></td>
+                        <td><?php echo $row['opis'] ?></td>
+                    </tr>
+                </tbody>
+            <?php endwhile; ?>
+        </table>
+
+    </div>
+
+
+
+
+    
+
+
+</div>

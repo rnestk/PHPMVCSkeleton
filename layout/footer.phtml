@@ -1,0 +1,29 @@
+<div class="container">
+
+    <p class="text-justify">
+        Vivamus scelerisque finibus eros, a malesuada risus faucibus sed. Aliquam mi odio, vehicula nec scelerisque eu, fermentum vel sem. Sed iaculis felis sit amet odio ultricies suscipit. Mauris luctus metus ac mauris viverra condimentum. Donec ut urna et velit ullamcorper vestibulum sed in metus. Phasellus sit amet purus vel elit facilisis rhoncus ac non neque. Nullam vitae malesuada est. Suspendisse ex nisl, mattis vel lectus in, congue luctus eros. Integer nec iaculis nisi. Vestibulum vel turpis euismod, pellentesque tellus a, viverra ante. Donec vitae pharetra felis, vitae eleifend nisl. Proin viverra velit leo, et dictum nulla sodales et. Aliquam nibh urna, aliquam laoreet dictum ut, interdum eget augue. Nullam iaculis quam felis, non ullamcorper lacus sodales sit amet. 
+    </p>
+
+</div> 
+
+<?php if (!empty($ids)): ?>
+    <?php while (list(, $i) = each($ids)): ?>
+        <?php echo app\lib\jQHelper::pileCssOn($i, 'formError') ?>
+    <?php endwhile; ?>
+<?php endif; ?>
+
+<?php
+if (isset($_SESSION['note']) 
+        && !empty($_SESSION['note']) 
+        && empty($_SESSION['user']) 
+        && $action != 'login' 
+        && $action != 'register' && $action != 'logout') {
+    echo app\lib\jQHelper::notification($_SESSION['note']);
+}
+
+?>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+</body>
+</html>

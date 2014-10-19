@@ -1,0 +1,55 @@
+<?php
+/* @var $form app\lib\FormHelper */
+$counter = 0;
+?>
+
+<div class="container bordered basicBackground">
+
+    <?php if (isset($confirm)): ?>
+    <div class="row" style="padding: 10px;">
+            <h3><?php echo $confirm; ?></h3>
+        </div>
+    <?php endif; ?>
+
+    <div style="float: left;">
+
+        <?php echo $form->startForm('basicForm'); ?>
+
+        <div class="row">
+            <?php echo $form->createLabel(array('title' => 'Wpisz login:')); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->createTextField(array('name' => 'login', 'id' => 'login', 'autocomplete' => 'on', 'placeholder' => 'Wpisz login')); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->createLabel(array('title' => 'Wpisz hasło:')); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->createPasswordField(array('name' => 'password', 'id' => 'password')); ?>
+        </div>
+
+        <div class="row">
+            <?php echo $form->createSubmitButton(array('class' => 'btn-info submitButton')); ?>
+        </div>
+
+        <?php echo $form->endForm(); ?>
+
+    </div>
+    <div style="float: left;">
+        <div class="row">
+        <?php if (!empty($errors)): ?>
+            <p style="color: #ff0000; margin-left: 20px;"><strong>Błędy w formularzu logowania:</strong></p>
+            <?php while (list(, $e) = each($errors)): ?>
+                <p style="margin-left: 20px;"><?php echo ++$counter . '. ' . $e . '</br>'; ?></p>
+            <?php endwhile; ?>
+        <?php endif; ?>
+        </div>
+    </div>
+
+
+
+
+</div>
